@@ -1,29 +1,29 @@
 {
-  "main": "node_modules/expo/AppEntry.js",
+  "name": "@entria/react-native-face-recognition",
+  "version": "0.0.3",
+  "description": "Allow facial recognition in React Native applications",
+  "homepage": "https://github.com/entria/react-native-face-recognition#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/entria/react-native-face-recognition"
+  },
+  "main": "index.js",
   "scripts": {
-    "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web": "expo start --web",
-    "eject": "expo eject"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release:patch": "npm version patch && git push --follow-tags && npm publish --access public",
+    "release:minor": "npm version minor && git push --follow-tags && npm publish --access public",
+    "release:major": "npm version major && git push --follow-tags && npm publish --access public"
   },
-  "dependencies": {
-    "expo": "^33.0.0",
-    "expo-file-system": "^5.0.1",
-    "firebase": "^6.3.3",
-    "react": "16.8.3",
-    "react-dom": "^16.8.6",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-33.0.0.tar.gz",
-    "react-native-fetch-blob": "^0.10.8",
-    "react-native-web": "^0.11.4",
-    "react-navigation": "^3.11.1",
-    "react-redux": "^7.1.0",
-    "react-router-dom": "^5.0.1",
-    "redux": "^4.0.4",
-    "redux-thunk": "^2.3.0"
-  },
-  "devDependencies": {
-    "babel-preset-expo": "^5.1.1"
-  },
-  "private": true
+  "keywords": [
+    "react-native",
+    "android",
+    "ios",
+    "face-recognition"
+  ],
+  "author": "Entria - The Tech Team",
+  "license": "MIT",
+  "peerDependencies": {
+    "react-native": "^0.41.2",
+    "react-native-windows": "0.41.0-rc.1"
+  }
 }
