@@ -29,6 +29,7 @@ yarn install
 3. Re-create `android` and `ios` folders:
 
 ```
+Before this you have to wrote this in cli npm i -g react-native-cli
 react-native eject
 ```
 
@@ -49,7 +50,7 @@ android {
   compileSdkVersion rootProject.ext.compileSdkVersion
 
   compileOptions {
-    // ...    
+    // ...
   }
 
   defaultConfig {
